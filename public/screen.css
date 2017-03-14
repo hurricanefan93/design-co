@@ -2,6 +2,87 @@ html {
   text-size-adjust: 100%;
 }
 
+.topnav {
+  background-color: #D3D3D3;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 20px;
+  border-top: 5px solid red;
+
+}
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+}
+.nav-container {
+  background-color: #D3D3D3;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.photos {
+  display: flex;
+  justify-content: center;
+}
+.photos img{
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+.Wall-e {
+  padding-right: 20px;
+}
+h1 {
+  text-align: center;
+  color: #696969;
+  font-family: "Century Gothic", sans-serif;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #696969;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h3 {
+  color: red;
+}
+
+.first-paragraph {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-content: space-between;
+  margin: 50px auto;
+  font-size: 10px;
+  max-width: 600px;
+}
+
+.articles div.whats-new {
+  flex: 1;
+}
+.articles div.modern-layouts {
+  flex: 3;
+}
+
+.articles div.modern-layouts p {
+  column-count: 3;
+}
+
 body {
   margin: 0;
   font: 16px / 1 sans-serif;

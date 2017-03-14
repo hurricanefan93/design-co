@@ -1,6 +1,10 @@
 html {
   text-size-adjust: 100%;
 }
+.Design {
+  height: 1em;
+  padding: 14px 16px
+}
 
 .topnav {
   background-color: #D3D3D3;
@@ -15,6 +19,9 @@ html {
   color: #000000;
   text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
+}
+
 }
 .nav-container {
   background-color: #D3D3D3;

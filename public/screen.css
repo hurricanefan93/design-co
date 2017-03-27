@@ -3,26 +3,41 @@ html {
 }
 .Design {
   height: 1em;
-  padding: 14px 16px
+  padding: 14px 16px;
 }
-
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .topnav {
-  background-color: #D3D3D3;
   display: flex;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 20px;
+  margin: 0 3em;
   border-top: 5px solid red;
-
 }
+
+a:hover {
+  background-color: #A9A9A9
+}
+
 .topnav a {
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
+.topnav a.active {
+  color: red;
 }
+
+
+.photos img:hover{
+  opacity: .12;
+
+}
+
 .nav-container {
   background-color: #D3D3D3;
 }
@@ -36,30 +51,35 @@ html {
   display: flex;
   justify-content: center;
 }
+.Wall-e{
+  margin-right: auto;
+
+}
 .photos img{
   width: 300px;
   height: 300px;
-  margin-top: 20px;
+  margin: 10px auto;
 }
-.Wall-e {
-  padding-right: 20px;
-}
+
 h1 {
   text-align: center;
   color: #696969;
   font-family: "Century Gothic", sans-serif;
-  margin-top: 50px;
+  margin: 1em 0 0 0;
+  padding-top: 2.5em;
 }
 
 h2 {
   text-align: center;
   color: #696969;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
 }
 
 h3 {
   color: red;
+  padding-bottom: 5px;
 }
 
 .first-paragraph {
@@ -74,13 +94,14 @@ h3 {
   flex-direction: row;
   align-content: space-around;
   align-content: space-between;
-  margin: 50px auto;
+  margin: 10px auto;
   font-size: 10px;
   max-width: 600px;
 }
 
 .articles div.whats-new {
   flex: 1;
+
 }
 .articles div.modern-layouts {
   flex: 3;
@@ -88,6 +109,25 @@ h3 {
 
 .articles div.modern-layouts p {
   column-count: 3;
+}
+
+@media (max-width: 460px) {
+  .articles {
+    display:block;
+  }
+.nav-container {
+  flex-wrap: wrap;
+}
+.topnav a{
+  flex: 1;
+  margin-bottom: 0.5em;
+
+}
+}
+
+
+.articles {
+  display:block;
 }
 
 body {
